@@ -41,7 +41,7 @@ public class JsonObject extends Json {
 
     public Json find(String name) {
         for (String key: map.keySet()) {
-            if (key == name) {
+            if (key.equals(name)) {
                 return map.get(key);
             }
         }
